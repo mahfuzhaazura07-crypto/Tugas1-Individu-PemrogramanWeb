@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Tugas 2 HTML Pemrograman Web</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Form Data Diri</h1>
+    <form>
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama"placeholder="Masukkan Nama Lengkap">
+        <br><br>
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" placeholder="Masukkan Alamat"></textarea>
+        <br><br>
+        <label>Jenis Kelamin</label>
+        <div class="pilihan">
+            <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki">
+            <label for="laki-laki">Laki-Laki</label>
+            <br>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+        </div>
+        <br>
+        <label>Hobi</label>
+        <div class="pilihan">
+            <input type="checkbox" id="musik" name="hobi" value="Musik">
+            <label for="musik">Musik</label>
+            <br>
+            <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+            <label for="olahraga">Olahraga</label>
+            <br>
+            <input type="checkbox" id="game" name="hobi" value="Game">
+            <label for="game">Game</label>
+            <br>
+            <input type="checkbox" id="bernyanyi" name="hobi" value="Bernyanyi">
+            <label for="bernyanyi">Bernyanyi</label>
+        </div>
+        <br>
+        <label for="jurusan">Jurusan</label>
+        <select id="jurusan" name="jurusan">
+            <option value="">--Pilih Jurusan--</option>
+            <option value="tekologi informasi">Teknologi Informasi</option>
+            <option value="ilmu komputer">Ilmu Komputer</option>
+            <option value="teknik informatika">Teknik Informatika</option>
+            <option value="sains data dan kecerdasan buatan">Sains Data dan Kecerdasan Buatan</option>"
+            <option value="lainnya">Lainnya</option>
+        </select>
+        <br><br>
+        <label for="password">Masukkan Password:</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan Password">
+        <br><br>
+        <input type="submit" value="Kirim Data">
+    </form>
+</div>
+</body>
+</html>
