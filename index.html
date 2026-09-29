@@ -3,81 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabel Data</title>
+    <title>Belajar Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap.css">
     <style>
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin: 20px auto;
-        }
-
-        th, td {
-            border: 1px solid #333;
-            padding: 10px;
-            text-align: center;
-        }
-        
-        th {
-            background-color: #ffb7e3
-        }
-
-        tr:nth-child(even) {
-            background-color:  rgb(234, 234, 117);
-        }
-
-        tr:nth-child(1) {
-            background-color: rgba(120, 58, 58, 0.783);
-            font-size: 18px;
-        }
-
-
-    </style>
- </head>
- <h2 style="text-align: center;">Tugas Individu</h2>
-
-    <table border="1" width="600px">
-        <thead height="100px">
-            <tr>
-                <th colspan="2" style="text-align: center; vertical-align: middle;">
-                    <img src="foto1.JPG.jpeg" width="450px" height="200px" alt="Resep Fudgy Brownies">
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan = "2" height="100px" style="text-align: justify;">Resep ini menghasilkan brownies dengan karakteristik tekstur yang lembut, padat, moist, dan fudgy pada bagian tengah, serta memiliki cita rasa cokelat yang kaya dan lezat. Dengan mengikuti takaran bahan dan tahapan yang tercantum dalam tabel, pembaca diharapkan dapat membuat fudgy brownies dengan hasil yang sesuai dan memiliki kualitas rasa serta tekstur yang baik.Untuk cara pembuatannya dapat dilihat di link dibawah ini<br><a href="https://youtu.be/IvptYHSYewo?si=1lIwqss63kUHG9h7" target="_blank">Tonton di YouTube</a></td>
-            </tr>
-             <tr height="300px">
-                <td width="250px">
-                    <img src="foto2.JPG.jpeg" width="300px" height="300px" alt="Fudgy Brownies">
-                </td> 
-                <td width="350px"><ol type="1" style="text-align: left; font-size:20px;">
-                    <li>112gr chocolate dark</li>
-                    <li>150gr mentega tawar</li>
-                    <li>2 cubit garam</li>
-                    <li>3 butir telur</li>
-                    <li>185gr gula pasir</li>
-                    <li>1/2sdt vanilla extract</li>
-                    <li>78gr tepung serbaguna</li>
-                    <li>38gr cocoa powder</li>
-                </ol></td>
-             </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="2" height="100px">🍫Ayo coba resep Fudgy Brownies ini!🤎 
-                    <br>Buat kamu pencinta brownies yang cokelatnya pekat, teksturnya lembut, dan bagian tengahnya fudgy banget, resep ini wajib dicoba!
-                    <br>Gampang dibuat, bahannya simpel, tapi hasilnya bikin susah berhenti ngemil. Yuk, langsung recook dan rasakan sendiri brownies fudgy yang lumer di setiap gigitan!✨🍫
-                    <br>Siap-siap jatuh cinta sama resep ini!🤎</td>
-                <p>
-                    <ul>
-                        <li><a href="tugas2.html">Tugas 2</a></li>
-                        <li><a href="tugas3.html">Tugas 3</a></li>
-                    </ul>
-                </p>
-            </tr>
-
-        </tfoot>
-    </table>
+@import url('https://fonts.googleapis.com/css2?family=Ruwudu:wght@400;500;600;700&display=swap');
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand">
+      <img src="Yellow Blue White Modern Computer Store Logo.png" width="100">
+    </a>
+    <div class="col ms-auto"></div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profil</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tugas Proweb
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html">Tugas 1</a></li>
+            <li><a class="dropdown-item" href="tugas2.html">Tugas 2</a></li>
+            <li><a class="dropdown-item" href="tugas3.html">Tugas 3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Hubungi</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <a href="#" class="btn btn-primary">Daftar</a>
+        <a href="#" class="btn btn-outline-primary">Masuk</a>
+      </form>
+    </div>
+  </div>
+</nav>
+            <div class="row">
+                <div class="col align-self-center">
+                    
+                    <h1 style="font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Hai!<br/>Selamat Datang di Proweb</h1>
+                    <p>
+                        Belajar pemrograman web mulai dari HTML, CSS, JavaScript, PHP dan MySQL
+                    </p>
+                    <a href="#" class="btn btn-success">Mulai Belajar</a>
+                </div>
+                <div class="col">
+                    <img src="Foto3.png" alt="foto pemrograman" class="hero-img" width="450">
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="logo html.jpg" class="card-img-top" alt="HTML">
+      <div class="card-body">
+        <h5 class="card-title">HTML</h5>
+        <p class="card-text">HTML adalah bahasa markup standar yang digunakan untuk membuat dan menyusun struktur halaman web.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="OIP.webp" class="card-img-top" alt="CSS">
+      <div class="card-body">
+        <h5 class="card-title">CSS</h5>
+        <p class="card-text">CSS adalah bahasa yang digunakan untuk mengatur tampilan dan presentasi dokumen HTML atau XML, termasuk layout, warna, font, dan elemen visual lainnya.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="JavaScript-Symbol.png" class="card-img-top" alt="JavaScript">
+      <div class="card-body">
+        <h5 class="card-title">Java Script</h5>
+        <p class="card-text">JavaScript adalah satu teknologi inti dalam pengembangan web bersama HTML dan CSS. Bahasa ini memungkinkan elemen halaman web merespons tindakan pengguna, seperti animasi, pop-up, validasi formulir, hingga pembaruan data tanpa memuat ulang halaman</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+        </div>
+    </section>
+    <script src="bootstrap.bundle.js"></script>
 </body>
 </html>
